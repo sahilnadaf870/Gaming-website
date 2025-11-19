@@ -1,0 +1,58 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(to top, #0f2027, #203a43, #2c5364);
+    font-family: 'Arial', sans-serif;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+#score, #level {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    z-index: 10;
+}
+
+#score {
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px #000;
+}
+
+#level {
+    top: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px #000;
+}
+
+
+#controls {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    z-index: 20;
+}
+
+.control-btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    user-select: none;
+    box-shadow: 0 0 10px #000;
+}
