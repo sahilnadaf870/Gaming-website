@@ -76,12 +76,12 @@ function updateLevel() {
         obstacleSpawnRate = 0.04;
         levelText = "Medium";
     } 
-    else if (score > 150 && score <= 250) {
+    else if (score > 500 && score <= 750) {
         obstacleSpeed = 9;
         obstacleSpawnRate = 0.06;
         levelText = "Hard";
     }
-    else if (score > 250) {
+    else if (score > 900) {
         obstacleSpeed = 12;
         obstacleSpawnRate = 0.08;
         levelText = "Fast";
@@ -154,3 +154,4 @@ function update() {
 }
 
 update();
+
